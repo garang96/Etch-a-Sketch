@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: "Helvetica neue" Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.grid-squares {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.grid-square {
+    width: 16rem;
+    height: 16rem;
+    background-color: brown;
+}
