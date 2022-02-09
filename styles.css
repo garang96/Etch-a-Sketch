@@ -12,10 +12,16 @@ body {
     border: 0;
 }
 
+:root {
+    --gridSizeRow: 1;
+    --gridSizeColumn: 1;
+}
+
 .grid-squares {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-template-columns: repeat(var(--gridSizeColumn), 10rem);
+    grid-template-rows: repeat(var(--gridSizeRow), 10rem);
     margin: 20px auto;
     justify-content: center;
     grid-gap: 10px;
@@ -23,8 +29,8 @@ body {
 
 .grid-square {
     background-color: brown;
-    width: 16rem;
-    height: 16rem;
+    width: 10rem;
+    height: 10rem;
     transition: all 1s ease-in-out;
 }
 
