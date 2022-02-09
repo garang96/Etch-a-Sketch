@@ -8,4 +8,4 @@ const gridSquares = (squaresNum) => {
     }
 }
 
-gridSquares(17);
+gridSquares(21);

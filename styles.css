@@ -14,21 +14,15 @@ body {
 
 .grid-squares {
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 16rem);
     margin: 20px auto;
+    justify-content: center;
+    grid-gap: 10px;
 }
 
 .grid-square {
+    background-color: brown;
     width: 16rem;
     height: 16rem;
-    background-color: brown;
-    display: flex;
-    flex-grow: 1;
-}
-
-.grid-squares :last-child {
-    flex-grow: 0;
 }
