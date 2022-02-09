@@ -25,4 +25,9 @@ body {
     background-color: brown;
     width: 16rem;
     height: 16rem;
+    transition: all 1s ease-in-out;
+}
+
+.grid-square:hover {
+    background-color: mistyrose;
 }
