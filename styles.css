@@ -17,11 +17,17 @@ body {
     --gridSizeColumn: 1;
 }
 
+#instruction {
+    font-family: cursive;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
 .grid-squares {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(var(--gridSizeColumn), 10rem);
-    grid-template-rows: repeat(var(--gridSizeRow), 10rem);
     margin: 20px auto;
     justify-content: center;
     grid-gap: 10px;
