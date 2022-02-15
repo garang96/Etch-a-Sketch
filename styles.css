@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
 }
 
@@ -13,8 +11,8 @@ body {
 }
 
 :root {
-    --gridSizeRow: 0;
     --gridSizeColumn: 0;
+    --randomColor: mistyrose;
 }
 
 #instruction {
@@ -22,13 +20,15 @@ body {
     font-size: 18px;
     color: white;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px;
+    transition: all 2s ease;
 }
 
 .user-interact {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 #user-input {
@@ -48,6 +48,7 @@ button {
     color: white;
     border-radius: 5px;
     font-size: 18px;
+    border: none;
 }
 
 .grid-squares {
@@ -67,5 +68,5 @@ button {
 }
 
 .grid-square:hover {
-    background-color: mistyrose;
+    background-color: var(--randomColor);
 }
