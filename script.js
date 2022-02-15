@@ -30,7 +30,7 @@ const gridSquares = (squaresNum) => {
 
 //events for create button
 
-createBtn.addEventListener('click', e => {
+const createGrids = (e) => {
     gridSquares(userInput.value);
     instructionText.innerText = `You've created a ${userInput.value} by ${userInput.value} grid of squares`;
     instructionText.style.color = 'white';
@@ -40,12 +40,12 @@ createBtn.addEventListener('click', e => {
         return;
     }
     if (userInput.value <= 0) {
+        gridMainContainer.innerHTML = "";
         instructionText.innerText = 'Invalid entry';
         instructionText.style.color = 'red';
         return;
     }
-
-});
+}
 
 //events for clear button
 
@@ -74,8 +74,12 @@ const unhoverEffect = (e) => {
         e.target.style.background = 'brown';
 }
 
+createBtn.addEventListener('click', createGrids);
 gridMainContainer.addEventListener("mouseover", hoverEffect);
 gridMainContainer.addEventListener("mouseout", unhoverEffect);
+window.addEventListener('keydown', e => {
+    if (e.keyCode === 13) createGrids();
+});
 
 // generate random rgb color
 
