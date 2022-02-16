@@ -33,7 +33,7 @@ const gridSquares = (squaresNum) => {
 const createGrids = (e) => {
     gridSquares(userInput.value);
     instructionText.innerText = `You've created a ${userInput.value} by ${userInput.value} grid of squares`;
-    instructionText.style.color = 'white';
+    instructionText.style.color = 'green';
     if (userInput.value === "") {
         instructionText.innerText = "Enter a grid square size";
         instructionText.style.color = 'red';

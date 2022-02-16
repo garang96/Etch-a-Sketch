@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,7 +22,7 @@ body {
     color: white;
     text-align: center;
     margin: 20px;
-    transition: all 2s ease;
+    transition: all .1s ease;
 }
 
 .user-interact {
@@ -44,15 +45,15 @@ body {
 button {
     width: 80px;
     padding: 10px;
-    background-color: dodgerblue;
-    color: white;
+    background-color: #5ca1e1;
+    color: #fff;
     border-radius: 5px;
     font-size: 18px;
     border: none;
 }
 
 .grid-squares {
-    width: 80%;
+    width: fit-content;
     display: grid;
     grid-template-columns: repeat(var(--gridSizeColumn), 10rem);
     margin: 20px auto;
@@ -64,7 +65,7 @@ button {
     background-color: brown;
     width: 10rem;
     height: 10rem;
-    transition: all 1s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .grid-square:hover {
