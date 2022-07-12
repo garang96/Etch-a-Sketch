@@ -1,4 +1,4 @@
-# Etch-a-Sketch
+# Square-grids
 
 A simple project to generate grid of squares.
 
